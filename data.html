@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Tabel</title>
+    <link rel="stylesheet" href="mantap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css"/>
+ 
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="left">
+                <h3>Pets <span>Clinic</span></h3>
+            </div>
+        </div>
+        <div class="menu">
+            <center>
+            <img src="clinic.png" class="profile" alt="">
+            <h4>Indira Yulianti <p></p> F55121023</h4>
+            </center>
+            <a href="index.html"><i class="fa-solid fa-hospital"></i><span>Home</span></a>
+            <a href="data.html"><i class="fa-solid fa-book-medical"></i><span>Data Tabel</span></a>
+            <a href="formulir.html"><i class="fa-solid fa-pen-to-square"></i><span>Formulir</span></a>
+            <a href="logout.html"><i class="fa-solid fa-arrow-right-from-bracket"></i><span>Logout</span></a>
+        </div>
+    <div class="utama">
+        <h3>DAFTAR ANTRIAN PEMERIKSAAN HEWAN</h3>
+        <table id="tabelsaya"class="table">
+            <thead>
+            <tr>
+                <th>No</th>
+                <th>Nama Pemeilik Hewan Peliharaan</th>
+                <th>Nama Hewan Peliharaan</th>
+                <th>jenis Hewan</th>
+                <th>Umur Hewan</th>
+                <th>Jenis Kelamin</th>
+                <th>Status Pemeriksaan</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Indira</td>
+                <td>Moci</td>
+                <td>Kucing</td>
+                <td>4 Tahun</td>
+                <td>Betina</td>
+                <td>Telah Selesai Pemeriksaan</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Siti</td>
+                <td>Moca</td>
+                <td>Kucing</td>
+                <td>2,5 Tahun</td>
+                <td>Betina</td>
+                <td>Telah Selesai Pemeriksaan</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Edward</td>
+                <td>Blacky</td>
+                <td>Anjing</td>
+                <td>7 Tahun</td>
+                <td>Jantan</td>
+                <td>Telah Selesai Pemeriksaan</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>fajrin</td>
+                <td>Coco</td>
+                <td>Kucing</td>
+                <td>5 Tahun</td>
+                <td>Jantan</td>
+                <td>Telah Selesai Pemeriksaan</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Indah</td>
+                <td>Bao</td>
+                <td>Kucing</td>
+                <td>1 Tahun</td>
+                <td>Jantan</td>
+                <td>Telah Selesai Pemeriksaan</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Vidya</td>
+                <td>Roxy</td>
+                <td>Biawak</td>
+                <td>1 Tahun</td>
+                <td>Betina</td>
+                <td>Telah Selesai Pemeriksaan</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Rosanti</td>
+                <td>Oreo</td>
+                <td>Kucing</td>
+                <td>1,5 Tahun</td>
+                <td>jantan</td>
+                <td>Telah Selesai Pemeriksaan</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Felisya</td>
+                <td>Luigi</td>
+                <td>Anjing</td>
+                <td>5 Tahun</td>
+                <td>Betina</td>
+                <td>Belum Melakukan Pemeriksaan</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>wahyu</td>
+                <td>Bibo</td>
+                <td>Monyet</td>
+                <td>3 Tahun</td>
+                <td>Betina</td>
+                <td>Belum Melakukan Pemeriksaan</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Nadia</td>
+                <td>Chiyo</td>
+                <td>Biawak</td>
+                <td>1 Tahun</td>
+                <td>Jantan</td>
+                <td>Belum Melakukan Pemeriksaan</td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+       <script>
+        $(document).ready(function(){
+          $("#tabelsaya").DataTable();
+        });</script>
+</body>
+</html>

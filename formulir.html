@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir</title>
+    <link rel="stylesheet" href="mantap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="left">
+                <h3>Pets <span>Clinic</span></h3>
+            </div>
+        </div>
+        <div class="menu">
+            <center>
+            <img src="clinic.png" class="profile" alt="">
+            <h4>Indira Yulianti <p></p> F55121023</h4>
+            </center>
+            <a href="index.html"><i class="fa-solid fa-hospital"></i><span>Home</span></a>
+            <a href="data.html"><i class="fa-solid fa-book-medical"></i><span>Data Tabel</span></a>
+            <a href="formulir.html"><i class="fa-solid fa-pen-to-square"></i><span>Formulir</span></a>
+            <a href="logout.html"><i class="fa-solid fa-arrow-right-from-bracket"></i><span>Logout</span></a>
+        </div>
+    <div class="wrapper">
+        <div class="title">
+            Formulir Pendaftaran pemeriksaan Hewan
+        </div>
+        <div class="form">
+            <div class="input_field">
+                <label>Nama Pemeilik Hewan Peliharaan</label>
+                <input type="text" class="input" id="A">
+            </div>
+            <div class="input_field">
+                <label>Nama Hewan Peliharaan</label>
+                <input type="text" class="input" id="B">
+            </div>
+            <div class="input_field">
+                <label >tipe</label>
+                <select class="tipe" id="C">
+                    <option value="" selected="selected"> --Pilih Hewan--</option>
+                    <option value="Kucing">Kucing</option>
+                    <option value="Anjing">Anjing</option>
+                    <option value="Monyet">Monyet</option>
+                    <option value="Monyet">Biawak</option>
+                </select>
+            </div>
+            <div class="input_field">
+                <label>Alamat</label>
+                <textarea class="textarea" id="D"></textarea>
+            </div>
+            <div class="input_field">
+                <label>Jenis Kelamin Hewan</label>
+                <select class="jk" id="E">
+                    <option value="" selected="selected">--Pilih Jenis Kelamin--</option>
+                    <option value="Betina">Betina</option>
+                    <option value="Jantan">jantan</option>
+                    <option value="lainnya">Lainnya</option>
+                </select>
+            </div>
+            <div class="input_field">
+                <label>Umur Hewan</label>
+                <input type="number" class="input" id="F"> Tahun
+            </div>
+            <div class="input_field">
+                <label>No Telp</label>
+                <input type="tel" class="input" id="G">
+            </div>
+            <!-- <div class="input_field">
+                <a href="1.html"><input type="submit" value="submit" class="btn"></a>
+            </div> -->
+            <button type="button" id="submit" class="btn">SUBMIT</button>
+    </div>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+        let nama = document.getElementById("A");
+        let Hewan = document.getElementById("B");
+        let tipe = document.getElementById("C");
+        let alamat = document.getElementById("D");
+        let JK = document.getElementById("E");
+        let Umur = document.getElementById("F");
+        let Telp = document.getElementById("G");
+        let submit = document.getElementById("submit").addEventListener("click", function(){
+            if (nama.value == ' ' || Hewan.value == ''|| tipe.value== ''|| alamat.value== ''|| JK.value== ''|| Umur.value== ''|| Telp.value== ''){
+                swal("Oops", "Data Tidak Boleh Kosong", "Error")
+            }
+            else{
+                swal("Good job!", "You clicked the button!", "success").then(function(){
+                    window.location.href = "data.html"
+                })
+            }
+        })
+
+    </script>
+</body>
+</html>
+
+
